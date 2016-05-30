@@ -1,4 +1,7 @@
 <?php
 
-Route::get('about','PagesController@about');
-Route::get('contact','PagesController@contact');
+Route::get('/','TasksController@index');
+Route::post('/task', 'TaskController@create');
+Route::get('/task/{task}', 'TaskController@delete');
+
+
